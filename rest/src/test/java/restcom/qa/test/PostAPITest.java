@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.qa.base.BaseClass;
@@ -43,6 +44,7 @@ public class PostAPITest extends BaseClass{
 		headerMap.put("Content-Type", "application/json");
 		
 		ObjectMapper mapper=new ObjectMapper();
+		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		Users users=new Users("Mac","Apple",4000,5,"abcd","Silver","Apple","Pro","apple@mac.com","apple1@mac.com");
 		
 		//object to json
@@ -67,13 +69,13 @@ public class PostAPITest extends BaseClass{
 		
 		System.out.println("The response of API POST call is :  "+jsonObj);
 		
-		//Users userObject=mapper.readValue(respoString, Users.class);
+		Users userObject=mapper.readValue(respoString, Users.class);
 		
-		//Assert.assertTrue(users.getName().equals(userObject.getName()));
+		Assert.assertTrue(users.getName().equals(userObject.getName()));
 		
-		//Assert.assertTrue(users.getType().equals(userObject.getType()));
+		Assert.assertTrue(users.getType().equals(userObject.getType()));
 		
-		//System.out.println(respoString);
+		System.out.println(respoString);
 		
 	}
 

@@ -9,33 +9,7 @@ public class Users {
 	String description;
 	String manufacturer,model,url,image;
 	String id;
-	/*String message;
-	String code;
-	/*String updatedAt;
-	public String getUpdatedAt() {
-		return updatedAt;
-	}
-
-	public void setUpdatedAt(String updatedAt) {
-		this.updatedAt = updatedAt;
-	}
-
-	public String getCreatedAt() {
-		return createdAt;
-	}
-
-	public void setCreatedAt(String createdAt) {
-		this.createdAt = createdAt;
-	}
-	String createdAt;*/
 	
-	
-
-
-
-	
-
-
 
 	public Users() {
 		
@@ -56,35 +30,7 @@ public class Users {
 		this.url = url;
 		this.image = image;
 	}
-	/*
-	public String getCode() {
-		return code;
-	}
-
-
-
-	public void setCode(String code) {
-		this.code = code;
-	}
-	public String getMessage() {
-		return message;
-	}
-
-
-
-	public void setMessage(String message) {
-		this.message = message;
-	}
-	*/
-	/*
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}	
-	*/
+	
 	public String getName() {
 		return name;
 	}
