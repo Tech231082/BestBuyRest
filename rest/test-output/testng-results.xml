@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="512" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="512" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+      <class name="restcom.qa.test.DeleteAPITest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:restcom.qa.test.DeleteAPITest@d8355a8]" name="setUp" is-config="true" duration-ms="5" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteCatogoriesIDWithHeadersTest()[pri:0, instance:restcom.qa.test.DeleteAPITest@d8355a8]" name="deleteCatogoriesIDWithHeadersTest" duration-ms="485" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCatogoriesIDWithHeadersTest -->
+      </class> <!-- restcom.qa.test.DeleteAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
