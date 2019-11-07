@@ -3,6 +3,7 @@ package restcom.qa.test;
 import java.io.IOException;
 import java.util.HashMap;
 
+import org.apache.http.Header;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
@@ -110,8 +111,15 @@ public class DeleteAPITest extends Base{
 		JSONObject json=new JSONObject(responseString);
 		System.out.println("Json response is "+json);
 		
+		Header []headers=response.getAllHeaders();
+		HashMap<String,String> headerArray=new HashMap<String,String>();
+		
+		for(Header header:headers) {
+			headerArray.put(header.getName(), header.getValue());
+		}
 		
 		
+		System.out.println("Header array is : "+headerArray);
 		
 	}
 

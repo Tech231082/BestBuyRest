@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="512" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+  <suite name="Default suite" duration-ms="480" started-at="2019-11-07T01:28:14Z" finished-at="2019-11-07T01:28:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="512" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+    <test name="Default test" duration-ms="480" started-at="2019-11-07T01:28:14Z" finished-at="2019-11-07T01:28:14Z">
       <class name="restcom.qa.test.DeleteAPITest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:restcom.qa.test.DeleteAPITest@d8355a8]" name="setUp" is-config="true" duration-ms="5" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:restcom.qa.test.DeleteAPITest@d8355a8]" name="setUp" is-config="true" duration-ms="6" started-at="2019-11-07T01:28:14Z" finished-at="2019-11-07T01:28:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="deleteCatogoriesIDWithHeadersTest()[pri:0, instance:restcom.qa.test.DeleteAPITest@d8355a8]" name="deleteCatogoriesIDWithHeadersTest" duration-ms="485" started-at="2019-11-07T00:44:31Z" finished-at="2019-11-07T00:44:31Z">
+        <test-method status="PASS" signature="deleteCatogoriesIDWithHeadersTest()[pri:0, instance:restcom.qa.test.DeleteAPITest@d8355a8]" name="deleteCatogoriesIDWithHeadersTest" duration-ms="456" started-at="2019-11-07T01:28:14Z" finished-at="2019-11-07T01:28:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteCatogoriesIDWithHeadersTest -->
