@@ -9,17 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">679</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">692</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">restcom.qa.test.PostAPICategoriesTest</td><td><a href="#m0">postCatoriesTest</a></td><td rowspan="1">1573149314016</td><td rowspan="1">651</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">restcom.qa.test.PatchAPICategories</td><td><a href="#m0">patchCategoriesIDTest</a></td><td rowspan="1">1573572720642</td><td rowspan="1">650</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">restcom.qa.test.PatchAPICategories</td><td><a href="#m1">test</a></td><td rowspan="1">1573572721296</td><td rowspan="1">16</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">restcom.qa.test.PostAPICategoriesTest#postCatoriesTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Status code is not as expected expected [201] but found [500]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at restcom.qa.test.PostAPICategoriesTest.postCatoriesTest(PostAPICategoriesTest.java:68)
+<h2>Default test</h2><h3 id="m0">restcom.qa.test.PatchAPICategories#patchCategoriesIDTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdAt&quot; (class com.qa.data.UserCategories), not marked as ignorable (2 known properties: &quot;name&quot;, &quot;id&quot;])
+ at [Source: (String)&quot;{&quot;id&quot;:&quot;abcat0020002&quot;,&quot;name&quot;:&quot;Toddler toys&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2019-11-12T15:32:01.247Z&quot;}&quot;; line: 1, column: 57] (through reference chain: com.qa.data.UserCategories[&quot;createdAt&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:823)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1153)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1589)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4014)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3005)
+	at restcom.qa.test.PatchAPICategories.patchCategoriesIDTest(PatchAPICategories.java:94)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,5 +51,6 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">restcom.qa.test.PatchAPICategories#test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

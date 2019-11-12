@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 07 10:55:13 MST 2019</td>
+<td>Started on:</td><td>Tue Nov 12 08:32:00 MST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (679 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (692 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='restcom.qa.test.PostAPICategoriesTest.postCatoriesTest()'><b>postCatoriesTest</b><br>Test class: restcom.qa.test.PostAPICategoriesTest</td>
-<td><div><pre>java.lang.AssertionError: Status code is not as expected expected [201] but found [500]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at restcom.qa.test.PostAPICategoriesTest.postCatoriesTest(PostAPICategoriesTest.java:68)
+<td title='restcom.qa.test.PatchAPICategories.patchCategoriesIDTest()'><b>patchCategoriesIDTest</b><br>Test class: restcom.qa.test.PatchAPICategories</td>
+<td><div><pre>com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdAt&quot; (class com.qa.data.UserCategories), not marked as ignorable (2 known properties: &quot;name&quot;, &quot;id&quot;])
+ at [Source: (String)&quot;{&quot;id&quot;:&quot;abcat0020002&quot;,&quot;name&quot;:&quot;Toddler toys&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2019-11-12T15:32:01.247Z&quot;}&quot;; line: 1, column: 57] (through reference chain: com.qa.data.UserCategories[&quot;createdAt&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:823)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1153)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1589)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4014)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3005)
+	at restcom.qa.test.PatchAPICategories.patchCategoriesIDTest(PatchAPICategories.java:94)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,14 +113,19 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace13803304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace13803304'><pre>java.lang.AssertionError: Status code is not as expected expected [201] but found [500]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:652)
-	at restcom.qa.test.PostAPICategoriesTest.postCatoriesTest(PostAPICategoriesTest.java:68)
+</pre></div><a href='#' onClick='toggleBox("stack-trace27362884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27362884'><pre>com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;createdAt&quot; (class com.qa.data.UserCategories), not marked as ignorable (2 known properties: &quot;name&quot;, &quot;id&quot;])
+ at [Source: (String)&quot;{&quot;id&quot;:&quot;abcat0020002&quot;,&quot;name&quot;:&quot;Toddler toys&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2019-11-12T15:32:01.247Z&quot;}&quot;; line: 1, column: 57] (through reference chain: com.qa.data.UserCategories[&quot;createdAt&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:823)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1153)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1589)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1567)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4014)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3005)
+	at restcom.qa.test.PatchAPICategories.patchCategoriesIDTest(PatchAPICategories.java:94)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -143,7 +153,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>restcom.qa.test.PostAPICategoriesTest@d8355a8</td></tr>
+<td>restcom.qa.test.PatchAPICategories@29774679</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='restcom.qa.test.PatchAPICategories.test()'><b>test</b><br>Test class: restcom.qa.test.PatchAPICategories</td>
+<td></td>
+<td>0</td>
+<td>restcom.qa.test.PatchAPICategories@29774679</td></tr>
 </table><p>
 </body>
 </html>

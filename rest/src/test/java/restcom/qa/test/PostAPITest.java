@@ -47,7 +47,7 @@ public class PostAPITest extends BaseClass{
 		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 		Users users=new Users("Mac","Apple",4000,5,"abcd","Silver","Apple","Pro","apple@mac.com","apple1@mac.com");
 		
-		//object to json
+		//object to json file
 		mapper.writeValue(new File("C://Users//parmod.kumar//eclipse-workspace//rest//src//main//java//com//qa//data//users.json"), users);
 		
 		

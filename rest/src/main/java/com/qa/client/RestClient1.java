@@ -11,6 +11,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPatch;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -20,6 +21,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 
 import com.qa.base.Base;
+import com.qa.data.UserCategories;
 
 public class RestClient1 extends Base{
 	//get method
@@ -228,6 +230,74 @@ public class RestClient1 extends Base{
 		return response;
 		
 		
+	}
+	
+	public CloseableHttpResponse postServices(String url,String entityString,HashMap<String,String> headerMap) throws ClientProtocolException, IOException {
+		CloseableHttpClient httpclient=HttpClients.createDefault();
+		
+		HttpPost post=new HttpPost(url);
+		
+		post.setEntity(new StringEntity(entityString));
+		
+		for(Entry<String, String> entry:headerMap.entrySet()) {
+			post.addHeader(entry.getKey(),entry.getValue());
+		}
+		
+		CloseableHttpResponse response=httpclient.execute(post);
+		
+		
+		return response;
+		
+	}
+	
+	public CloseableHttpResponse patchservices(String url,String entityString,HashMap<String,String> headerMap) throws ClientProtocolException, IOException {
+		CloseableHttpClient httpclient=HttpClients.createDefault();
+		
+		HttpPatch patch=new HttpPatch(url);
+		
+		patch.setEntity(new StringEntity(entityString));
+		
+		for(Entry<String,String> entry:headerMap.entrySet()) {
+			patch.addHeader(entry.getKey(),entry.getValue());
+		}
+		
+		CloseableHttpResponse response=httpclient.execute(patch);
+		return response;
+	}
+	
+	public CloseableHttpResponse patchCategoriesID(String url,String entityString,HashMap<String,String> headerMap) throws ClientProtocolException, IOException {
+		
+		CloseableHttpClient httpclient=HttpClients.createDefault();
+		
+		HttpPatch patch=new HttpPatch(url);
+		
+		patch.setEntity(new StringEntity(entityString));
+				
+		
+		//headerMap
+		for(Entry<String,String> entry:headerMap.entrySet()) {
+			patch.addHeader(entry.getKey(),entry.getValue());
+		}
+		
+		CloseableHttpResponse response=httpclient.execute(patch);
+		return response;
+		
+	}
+	
+	public CloseableHttpResponse patchCategoriesID1(String url,String entityString,HashMap<String,String> headerMap) throws ClientProtocolException, IOException {
+		CloseableHttpClient httpclient=HttpClients.createDefault();
+		HttpPatch patch=new HttpPatch(url);
+		
+		patch.setEntity(new StringEntity(entityString));
+		
+		for(Entry<String,String> entry:headerMap.entrySet()){
+			
+			patch.addHeader(entry.getKey(), entry.getValue());
+			
+		}
+		
+		CloseableHttpResponse response=httpclient.execute(patch);
+		return response;
 	}
 	
 
